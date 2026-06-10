@@ -3,5 +3,14 @@ body{
     color: white;
 }
 .cabecalho{
-    
+    background: linear-gradient(to right, #e63946 30%, black 30%);
+}
+
+.cabecalho img{
+    text-align: center
+    width: 40%
+
+}
+.cabecalho hl{
+    margin-left: 30%;
 }
