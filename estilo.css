@@ -4,6 +4,9 @@ body{
 }
 .cabecalho{
     background: linear-gradient(to right, #e63946 30%, black 30%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cabecalho img{
@@ -13,5 +16,5 @@ body{
 }
 .cabecalho hl{
     margin-left: 30%;
-    
+
 }
