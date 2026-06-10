@@ -7,10 +7,11 @@ body{
 }
 
 .cabecalho img{
-    text-align: center
-    width: 40%
+    text-align: center;
+    width: 40%;
 
 }
 .cabecalho hl{
     margin-left: 30%;
+    
 }
