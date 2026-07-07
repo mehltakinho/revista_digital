@@ -20,7 +20,7 @@ body{
 }
 
 .conteudo01{
-    display flex:;
+    display: flex;
     padding: 32px;
     justify-content: center;
     align-items: center;
