@@ -1,37 +1,127 @@
-body{
-    background-color: red;
-    color: white;
+body {
+    background-color: #1a1a1a; /* Fundo escuro externo */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
 }
-.cabecalho{
-    background: linear-gradient(to right, #e63946 30%, black 30%);
+
+/* Caixa principal que limita o tamanho da revista */
+.magazine-container {
+    width: 400px;
+    background-color: #ffffff; /* Fundo interno branco */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.6);
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.cabecalho img{
-    text-align: center;
-    width: 50%;
-
-}
-.cabecalho hl{
-    margin-left: 30%;
-
+/* --- HEADER (Topo) --- */
+.magazine-header {
+    background-color: #ffffff;
 }
 
-.conteudo01{
+.magazine-header img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.header-title-box {
+    padding: 20px 25px 10px 25px;
+    background-color: #ffffff;
+}
+
+.header-title-box h1 {
+    font-size: 26px;
+    color: #111111;
+    margin: 0;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+}
+
+/* --- CORPO DA REVISTA (Duas Colunas Lado a Lado) --- */
+.magazine-content {
+    display: flex; /* Alinha a coluna esquerda e a direita na mesma linha */
+    background-color: #ffffff;
+}
+
+/* Coluna Esquerda (Matéria principal) */
+.column-left {
+    flex: 1; /* Ocupa a maior parte do espaço */
+    padding: 15px 20px 20px 25px;
+    background-color: #ffffff;
+}
+
+.column-left h2 {
+    font-size: 12px;
+    color: #000000;
+    line-height: 1.35;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+
+.column-left p {
+    font-size: 11px;
+    color: #444444;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.blue-square-graphic {
+    width: 35px;
+    height: 18px;
+    background-color: #0056b3; /* Pequeno bloco azul decorativo */
+    margin-top: 15px;
+}
+
+/* Coluna Direita (Bloco Escuro Lateral) */
+.column-right {
+    width: 35%; /* Largura fixa menor para a barra lateral */
+    background-color: #2b3a4a; /* Azul escuro/cinza igual ao modelo original */
+    padding: 20px 15px;
+    color: #ffffff;
     display: flex;
-    padding: 32px;
-    justify-content: center;
-    align-items: center;
-    background-color: #e63946;
-    font-size: 24px;
+    flex-direction: column;
 }
 
-.conteudo01-img{
-    width: 40%;
+.logo-wirecutter {
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
-.conteudo01-direito{
-    background-color: burlywood;
-    padding: 32px;
+
+/* Círculo branco com a letra da logo */
+.logo-wirecutter span {
+    background-color: #ffffff;
+    color: #2b3a4a;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+}
+
+.right-text {
+    font-size: 10px;
+    line-height: 1.4;
+    color: #cbd5e1;
+    margin: 0;
+}
+
+/* --- FOOTER (Imagem de baixo) --- */
+.magazine-footer {
+    width: 100%;
+}
+
+.magazine-footer img {
+    width: 100%;
+    display: block;
+    height: auto;
 }
