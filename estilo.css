@@ -1,142 +1,37 @@
-/* Configuração do fundo externo (ambiente de leitura focado) */
-body {
-    background-color: #efefef; /* Cinza claro suave para dar contraste com a folha */
-    font-family: "Georgia", "Times New Roman", serif; /* Fonte editorial clássica */
-    margin: 0;
-    padding: 40px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    color: #2b2b2b; /* Texto em grafite escuro, mais suave que o preto puro */
+body{
+    background-color: red;
+    color: white;
 }
-
-/* Corpo da página da revista (Simula papel fosco off-white) */
-.magazine-page {
-    width: 420px;
-    background-color: #fcfbfa; /* Cor "gessada" / off-white, sem refletir luz intensa */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Sombra suave de papel real */
-    border-radius: 4px;
-    overflow: hidden;
+.cabecalho{
+    background: linear-gradient(to right, #e63946 30%, black 30%);
     display: flex;
     flex-direction: column;
-}
-
-/* --- CABEÇALHO --- */
-.magazine-header {
-    background-color: #fcfbfa;
-}
-
-.image-wrapper {
-    width: 100%;
-    background-color: #f5f4f0; /* Fundo neutro caso a imagem demore a carregar */
-    overflow: hidden;
-}
-
-.editorial-img {
-    width: 100%;
-    display: block;
-    height: auto;
-    mix-blend-mode: multiply; /* Suaviza as bordas brancas de imagens no fundo off-white */
-}
-
-.header-headline {
-    padding: 25px 25px 15px 25px;
-}
-
-.header-headline h1 {
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    color: #1a1a1a;
-    margin: 0;
-    line-height: 1.15;
-    letter-spacing: -0.5px;
-}
-
-/* --- CONTEÚDO CENTRAL (Layout em Colunas) --- */
-.magazine-body {
-    display: flex;
-    background-color: #fcfbfa;
-    border-top: 1px solid #eeebe4; /* Linha divisória fina estilo jornal */
-    border-bottom: 1px solid #eeebe4;
-}
-
-/* Coluna da Esquerda - Matéria */
-.main-column {
-    flex: 1;
-    padding: 20px 15px 25px 25px;
-}
-
-.main-column h2 {
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-size: 13px;
-    font-weight: 700;
-    color: #1a1a1a;
-    line-height: 1.4;
-    margin: 0 0 12px 0;
-    text-transform: uppercase; /* Estilo de manchete curta */
-    letter-spacing: 0.2px;
-}
-
-.main-column p {
-    font-size: 11.5px;
-    color: #4a4a4a;
-    line-height: 1.5;
-    margin: 0;
-}
-
-/* Marcador decorativo sutil (substituindo o azul forte por um tom pastel sóbrio) */
-.editorial-badge {
-    width: 30px;
-    height: 12px;
-    background-color: #9bb1c4; /* Azul acinzentado opaco */
-    margin-top: 20px;
-}
-
-/* Coluna da Direita - Bloco Lateral de Destaque */
-.sidebar-column {
-    width: 33%;
-    background-color: #f2efe9; /* Tom bege areia claro e fosco */
-    padding: 20px 20px 20px 15px;
-    display: flex;
-    flex-direction: column;
-}
-
-.brand-logo {
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-    font-size: 12px;
-    color: #3a3a3a;
-    margin-bottom: 12px;
-    display: flex;
     align-items: center;
-    gap: 5px;
 }
 
-/* Ícone circular do bloco lateral */
-.logo-icon {
-    background-color: #3a3a3a;
-    color: #f2efe9;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    display: inline-flex;
-    align-items: center;
+.cabecalho img{
+    text-align: center;
+    width: 50%;
+
+}
+.cabecalho hl{
+    margin-left: 30%;
+
+}
+
+.conteudo01{
+    display: flex;
+    padding: 32px;
     justify-content: center;
-    font-size: 10px;
-    padding-bottom: 1px;
+    align-items: center;
+    background-color: #e63946;
+    font-size: 24px;
 }
 
-.sidebar-text {
-    font-size: 10.5px;
-    line-height: 1.45;
-    color: #5a5a5a;
-    margin: 0;
+.conteudo01-img{
+    width: 40%;
 }
-
-/* --- RODAPÉ --- */
-.magazine-footer {
-    width: 100%;
-    background-color: #fcfbfa;
+.conteudo01-direito{
+    background-color: burlywood;
+    padding: 32px;
 }
