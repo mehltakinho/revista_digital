@@ -3,54 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revista Digital - One Piece</title>
+    <title>Revista Editorial - One Piece</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Container principal que limita a largura da revista e a centraliza -->
-    <div class="magazine-container">
+    <!-- Estrutura que simula a página física da revista -->
+    <main class="magazine-page">
         
-        <!-- TOPO: Imagem principal do One Piece -->
+        <!-- Cabeçalho com a arte principal -->
         <header class="magazine-header">
-            <!-- Certifique-se de que o nome da imagem do topo esteja correto aqui -->
-            <img src="one-piece-logo.png" alt="One Piece Logo" class="main-img">
+            <div class="image-wrapper">
+                <!-- Certifique-se de usar o nome correto do seu arquivo de imagem aqui -->
+                <img src="one-piece-logo.png" alt="Destaque One Piece" class="editorial-img">
+            </div>
             
-            <div class="header-title-box">
+            <div class="header-headline">
                 <h1>Gear for getting better at your side gig</h1>
             </div>
         </header>
 
-        <!-- MEIO: Seção dividida em duas colunas lado a lado -->
-        <div class="magazine-content">
+        <!-- Seção de Artigos: Duas colunas integradas -->
+        <section class="magazine-body">
             
-            <!-- Coluna Esquerda (Fundo Branco) -->
-            <article class="column-left">
+            <!-- Coluna Principal (Texto e Matéria) -->
+            <article class="main-column">
                 <h2>YouTube revamps its Red subscription service to offer standalone music streaming</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                <!-- Pequeno bloco azul decorativo do modelo -->
-                <div class="blue-square-graphic"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                <!-- Detalhe minimalista em tom pastel -->
+                <div class="editorial-badge"></div>
             </article>
 
-            <!-- Coluna Direita (Fundo Escuro) -->
-            <aside class="column-right">
-                <div class="logo-wirecutter">
-                    <span>w</span> wirecutter
+            <!-- Coluna Lateral (Bloco de Apoio) -->
+            <aside class="sidebar-column">
+                <div class="brand-logo">
+                    <span class="logo-icon">w</span> wirecutter
                 </div>
-                <p class="right-text">
-                    Lorem ipsum dolor sit amet consecte Lorem ipsum dolor sit amet consecte
+                <p class="sidebar-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget sapien vel ligula elementum elementum ac non sem.
                 </p>
             </aside>
 
-        </div>
+        </section>
 
-        <!-- RODAPÉ: Segunda imagem da revista -->
+        <!-- Rodapé com a segunda imagem do projeto -->
         <footer class="magazine-footer">
-            <!-- Substitua pelo nome do arquivo da sua imagem de rodapé -->
-            <img src="img/sh9uj0bn5vbd1.jpeg" alt="Rodapé Revista" class="footer-img">
+            <div class="image-wrapper">
+                <!-- Certifique-se de usar o nome correto da sua imagem inferior aqui -->
+                <img src="img/sh9uj0bn5vbd1.jpeg" alt="Encarte Inferior" class="editorial-img">
+            </div>
         </footer>
 
-    </div>
+    </main>
 
 </body>
 </html>
