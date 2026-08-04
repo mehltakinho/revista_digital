@@ -1,23 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./estilo.css">
+    <title>Revista Digital</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="./img/sh9uj0bn5vbd1.jpeg" alt="">
-        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-    </header>
-   <section class="conteudo01">
-    <div class="conteudo01-direito">
-        <img class="conteudo01-direito" src="" alt="">
-        <p>Lorem ipsum dolor sit amet consecte
-        <p>Lorem ipsum dolor sit amet consecte
 
+    <!-- Container principal que segura toda a revista -->
+    <div class="magazine-container">
         
-    </section>
+        <!-- Seção do Topo: Imagem e Título Principal -->
+        <header class="magazine-header">
+            <div class="header-image-box">
+                <!-- Substitua pelo link da sua foto do homem com a câmera -->
+                <img src="homem-camera.jpg" alt="Gear for getting better" class="main-img">
+            </div>
+            <div class="header-title-box">
+                <h1>Gear for getting better at your side gig</h1>
+            </div>
+        </header>
+
+        <!-- Seção do Meio: Dividida em duas colunas -->
+        <div class="magazine-content">
+            
+            <!-- Coluna Esquerda (Branca) -->
+            <article class="column-left">
+                <h2>YouTube revamps its Red subscription service to offer standalone music streaming</h2>
+                <p>Aqui você pode adicionar o texto complementar da matéria do YouTube conforme o seu projeto pedir.</p>
+                <div class="blue-square-graphic"></div>
+            </article>
+
+            <!-- Coluna Direita (Azul Escura) -->
+            <aside class="column-right">
+                <div class="logo-wirecutter">
+                    <span>w</span> wirecutter
+                </div>
+                <p class="right-text">
+                    Texto ou conteúdo adicional que vai dentro da seção escura da revista.
+                </p>
+            </aside>
+
+        </div>
+
+        <!-- Seção do Rodapé: Imagem dos equipamentos -->
+        <footer class="magazine-footer">
+            <!-- Substitua pelo link da sua foto da mesa com os equipamentos de áudio -->
+            <img src="equipamentos.jpg" alt="Equipamentos de áudio" class="footer-img">
+        </footer>
+
+    </div>
+
 </body>
 </html>

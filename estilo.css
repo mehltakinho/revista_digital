@@ -1,86 +1,88 @@
+/* Configurações básicas da página */
 body {
-    background-color: #1a1a1a; /* Fundo escuro externo */
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #1a1a1a; /* Fundo escuro igual ao do Google Classroom */
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
     display: flex;
     justify-content: center;
 }
 
-/* Caixa principal que limita o tamanho da revista */
+/* Caixa principal da revista (formato vertical) */
 .magazine-container {
-    width: 400px;
-    background-color: #ffffff; /* Fundo interno branco */
-    box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+    width: 380px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
     display: flex;
     flex-direction: column;
 }
 
 /* --- HEADER (Topo) --- */
 .magazine-header {
-    background-color: #ffffff;
+    position: relative;
+    background-color: #e2e7ec; /* Tom de fundo acinzentado do topo */
 }
 
-.magazine-header img {
+.main-img {
     width: 100%;
     display: block;
     height: auto;
 }
 
 .header-title-box {
-    padding: 20px 25px 10px 25px;
     background-color: #ffffff;
+    padding: 20px;
+    margin-top: -10px;
+    position: relative;
+    z-index: 2;
 }
 
 .header-title-box h1 {
-    font-size: 26px;
+    font-size: 24px;
     color: #111111;
     margin: 0;
-    font-weight: 800;
-    line-height: 1.15;
-    letter-spacing: -0.5px;
+    font-weight: bold;
+    line-height: 1.2;
 }
 
-/* --- CORPO DA REVISTA (Duas Colunas Lado a Lado) --- */
+/* --- CORPO DA REVISTA (Duas Colunas) --- */
 .magazine-content {
-    display: flex; /* Alinha a coluna esquerda e a direita na mesma linha */
+    display: flex; /* Divide em duas colunas lado a lado */
     background-color: #ffffff;
 }
 
-/* Coluna Esquerda (Matéria principal) */
+/* Coluna Esquerda (Branca) */
 .column-left {
-    flex: 1; /* Ocupa a maior parte do espaço */
-    padding: 15px 20px 20px 25px;
+    flex: 1;
+    padding: 15px;
     background-color: #ffffff;
 }
 
 .column-left h2 {
-    font-size: 12px;
+    font-size: 11px;
     color: #000000;
-    line-height: 1.35;
-    margin: 0 0 10px 0;
-    font-weight: bold;
+    line-height: 1.3;
+    margin: 0 0 15px 0;
 }
 
 .column-left p {
-    font-size: 11px;
-    color: #444444;
+    font-size: 10px;
+    color: #555555;
     line-height: 1.4;
-    margin: 0;
 }
 
 .blue-square-graphic {
-    width: 35px;
-    height: 18px;
-    background-color: #0056b3; /* Pequeno bloco azul decorativo */
+    width: 30px;
+    height: 15px;
+    background-color: #3a75c4; /* Quadrado azul do rodapé da coluna */
     margin-top: 15px;
 }
 
-/* Coluna Direita (Bloco Escuro Lateral) */
+/* Coluna Direita (Azul Escura) */
 .column-right {
-    width: 35%; /* Largura fixa menor para a barra lateral */
-    background-color: #2b3a4a; /* Azul escuro/cinza igual ao modelo original */
-    padding: 20px 15px;
+    width: 40%; /* Ocupa menos espaço que a esquerda */
+    background-color: #3c4858; /* Cor azul/cinza escura do bloco direito */
+    padding: 15px;
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -88,39 +90,38 @@ body {
 
 .logo-wirecutter {
     font-weight: bold;
-    font-size: 13px;
+    font-size: 14px;
     margin-bottom: 15px;
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 5px;
 }
 
-/* Círculo branco com a letra da logo */
 .logo-wirecutter span {
     background-color: #ffffff;
-    color: #2b3a4a;
+    color: #3c4858;
     border-radius: 50%;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .right-text {
     font-size: 10px;
     line-height: 1.4;
-    color: #cbd5e1;
-    margin: 0;
+    color: #dddddd;
 }
 
-/* --- FOOTER (Imagem de baixo) --- */
+/* --- FOOTER (Fundo com imagem de áudio) --- */
 .magazine-footer {
     width: 100%;
+    overflow: hidden;
 }
 
-.magazine-footer img {
+.footer-img {
     width: 100%;
     display: block;
     height: auto;
